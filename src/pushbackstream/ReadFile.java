@@ -10,11 +10,11 @@ import javax.swing.JTextPane;
  */
 public class ReadFile extends javax.swing.JFrame {
 
-    /**
-     * Creates new form ReadFile
-     */
+    private Control controller;
+
     public ReadFile() {
         initComponents();
+        controller = new Control(this);
     }
 
     /**
@@ -128,7 +128,7 @@ public class ReadFile extends javax.swing.JFrame {
     public JTextPane getjTextPane1() {
         return jTextPane1;
     }
-    
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnLoad;
